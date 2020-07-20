@@ -28,7 +28,7 @@ airship_gate_ipam:
     dhcp_start: "10.23.25.100"
     dhcp_end: "10.23.25.199"
   provision_network:
-    bridge_ip: "10.23.24.1"
+    bridge_ip: "100.23.24.1"
 
 airship_gate_redfish_noauth:
   servername: "localhost"

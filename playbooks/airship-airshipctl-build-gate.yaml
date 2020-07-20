@@ -123,7 +123,7 @@
             ephemeral_disk_size: 20G
             target_disk_size: 10G
             disk_format: qcow2
-            target_vms_count: 1
+            target_vms_count: 4
             target_vm_nics: "{{ target_vm_nics }}"
         airship_gate_file_exchanger:
           servername: "localhost"

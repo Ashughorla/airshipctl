@@ -1,6 +1,12 @@
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ../../../shared/baremetalhost/node01
+      - ../../../shared/baremetalhost/node01
+      - ../../../shared/baremetalhost/vbmc/node03
+      - ../../../shared/baremetalhost/vbmc/node04
+      - ../../../shared/baremetalhost/vbmc/node05
+      #- ../../../shared/baremetalhost/node03
+      #- ../../../shared/baremetalhost/node05
 commonLabels:
-  airshipit.org/k8s-role: controlplane-host
+     airshipit.org/k8s-role: controlplane-host
