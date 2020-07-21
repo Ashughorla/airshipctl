@@ -1,0 +1,14 @@
+---
+apiVersion: metal3.io/v1alpha1
+kind: BareMetalHost
+metadata:
+  name: node05
+spec:
+  bmc:
+    address: redfish+http://10.23.25.1:8000/redfish/v1/Systems/air-target-4
+    credentialsName: node05-bmc
+  online: true
+  bootMACAddress: 52:54:00:b6:ed:35
+  networkData:
+    name: node05-netdata
+    namespace: default
