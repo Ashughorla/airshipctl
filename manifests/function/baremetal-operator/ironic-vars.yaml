@@ -5,9 +5,9 @@ metadata:
   labels:
   name: ironic-vars
 data:
-  PROVISIONING_IP: "10.23.24.101"
-  DHCP_RANGE: "10.23.24.200,10.23.24.250"
-  PROVISIONING_INTERFACE: "enp0s4"
+  PROVISIONING_IP: "192.168.10.100"
+  DHCP_RANGE: "192.168.10.200,192.168.10.250"
+  PROVISIONING_INTERFACE: "pxe0"
   HTTP: "80"
   DEPLOY_KERNEL_PATH: "/images/tinyipa-stable-ussuri.vmlinuz"
   DEPLOY_RAMDISK_PATH: "/images/tinyipa-stable-ussuri.gz"
