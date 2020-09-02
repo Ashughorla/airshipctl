@@ -27,7 +27,7 @@ export AIRSHIP_CONFIG_ISO_BUILDER_DOCKER_IMAGE=${BUILDER_IMAGE:-"quay.io/airship
 export REMOTE_TYPE=redfish
 export REMOTE_INSECURE=true
 export REMOTE_PROXY=false
-export AIRSHIP_CONFIG_ISO_SERVE_HOST=${HOST:-"localhost"}
+export AIRSHIP_CONFIG_ISO_SERVE_HOST=${HOST:-"192.168.110.153"}
 export AIRSHIP_CONFIG_ISO_PORT=${SERVE_PORT}
 export AIRSHIP_CONFIG_ISO_NAME=${ISO_NAME:-"ubuntu-focal.iso"}
 export SYSTEM_ACTION_RETRIES=30
@@ -36,9 +36,9 @@ export AIRSHIP_CONFIG_PRIMARY_REPO_BRANCH=${BRANCH:-"master"}
 # the git repo url or local file system path to a cloned repo, e.g., /home/stack/airshipctl
 export AIRSHIP_CONFIG_PRIMARY_REPO_URL=${REPO:-"https://review.opendev.org/airship/airshipctl"}
 export AIRSHIP_SITE_NAME=${AIRSHIP_SITE_NAME:-"manifests/site/test-site"}
-export AIRSHIP_CONFIG_MANIFEST_DIRECTORY=${AIRSHIP_CONFIG_MANIFEST_DIRECTORY:-"/tmp/airship"}
+export AIRSHIP_CONFIG_MANIFEST_DIRECTORY=${AIRSHIP_CONFIG_MANIFEST_DIRECTORY:-"/home/node-53/lucifer/airshipctl"}
 export AIRSHIP_CONFIG_CA_DATA=$(cat tools/deployment/certificates/airship_config_ca_data| base64 -w0)
-export AIRSHIP_CONFIG_EPHEMERAL_IP=${IP_Ephemeral:-"10.23.25.101"}
+export AIRSHIP_CONFIG_EPHEMERAL_IP=${IP_Ephemeral:-"100.82.39.148"}
 export AIRSHIP_CONFIG_CLIENT_CERT_DATA=$(cat tools/deployment/certificates/airship_config_client_cert_data| base64 -w0)
 export AIRSHIP_CONFIG_CLIENT_KEY_DATA=$(cat tools/deployment/certificates/airship_config_client_key_data| base64 -w0)
 

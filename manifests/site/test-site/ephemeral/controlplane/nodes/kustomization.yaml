@@ -4,5 +4,5 @@ kind: Kustomization
 generators:
   - ../hostgenerator
 
-commonLabels:
-  airshipit.org/k8s-role: controlplane-host
+    #commonLabels:
+    #  airshipit.org/k8s-role: controlplane-host

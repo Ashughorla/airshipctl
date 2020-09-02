@@ -45,6 +45,7 @@ template: |
     bmc:
       address: {{ $host.bmcAddress }}
       credentialsName: {{ $hostName }}-bmc-secret
+      disableCertificateVerification: true
     firmware:
   {{ toYaml $hardwareProfile.firmware | indent 4 }}
 

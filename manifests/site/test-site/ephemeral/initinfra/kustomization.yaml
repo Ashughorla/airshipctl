@@ -2,6 +2,7 @@ resources:
   - ../../../../composite/infra
   - ../../shared/clusterctl
   - ../../../../function/baremetal-operator
+  - ../../../../function/hwcc
 patchesStrategicMerge:
   - patch_bmo_config.yaml
 commonLabels:

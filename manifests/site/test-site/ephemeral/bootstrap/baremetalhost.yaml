@@ -10,7 +10,8 @@ metadata:
 spec:
   online: true
   bmc:
-    address: redfish+https://localhost:8443/redfish/v1/Systems/air-ephemeral
+    address: redfish+https://192.168.110.48/redfish/v1/Systems/System.Embedded.1
+    disableCertificateVerification: true
 status:
   provisioning:
 # we need this status to make sure, that the host is not going to be

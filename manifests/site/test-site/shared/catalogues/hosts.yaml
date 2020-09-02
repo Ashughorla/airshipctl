@@ -6,29 +6,49 @@ metadata:
   name: host-catalogue
 hosts:
   m3:
-    node01:
+    node49:
       bootMode: UEFI
-      macAddress: 52:54:00:b6:ed:31
-      bmcAddress: redfish+http://10.23.25.1:8000/redfish/v1/Systems/air-target-1
-      bmcUsername: root
-      bmcPassword: r00tme
-      ipAddresses:
-        oam-ipv4: 10.23.25.102
-        pxe-ipv4: 10.23.24.102
-      macAddresses:
-        oam: 52:54:00:9b:27:4c
-        pxe: 52:54:00:b6:ed:31
-      hardwareProfile: default # defined in the hostgenerator-m3 function
-    node02:
-      bootMode: UEFI
-      macAddress: 52:54:00:b6:ed:02
-      bmcAddress: redfish+http://10.23.25.2:8000/redfish/v1/Systems/air-target-2
+      macAddress: 24:6E:96:51:F4:48
+      bmcAddress: redfish+https://192.168.110.49/redfish/v1/Systems/System.Embedded.1
       bmcUsername: username
       bmcPassword: password
       ipAddresses:
-        oam-ipv4: 10.23.25.101
-        pxe-ipv4: 10.23.24.101
+        oam-ipv4: 100.82.39.149
+        pxe-ipv4: 192.168.121.49
+        eno4-ipv4: 192.168.110.149
       macAddresses:
-        oam: 52:54:00:9b:27:02
-        pxe: 52:54:00:b6:ed:02
+        oam: 24:6E:96:51:F4:28
+        pxe: 24:6E:96:51:F4:48
+        eno4: 24:6E:96:51:F4:49
+      hardwareProfile: default # defined in the hostgenerator-m3 function
+    node52:
+      bootMode: UEFI
+      macAddress: 24:6E:96:51:74:9A
+      bmcAddress: redfish+https://192.168.110.52/redfish/v1/Systems/System.Embedded.1
+      bmcUsername: username
+      bmcPassword: password
+      ipAddresses:
+        oam-ipv4: 100.82.39.152
+        pxe-ipv4: 192.168.121.52
+        eno4-ipv4: 192.168.110.152
+      macAddresses:
+        oam: 24:6E:96:51:74:7A
+        pxe: 24:6E:96:51:74:9A
+        eno4: 24:6E:96:51:74:9B
+      hardwareProfile: default # defined in the hostgenerator-m3 function
+    node02:
+      bootMode: UEFI
+      macAddress: 24:6E:96:53:05:BC
+      bmcAddress: redfish+https://192.168.110.48/redfish/v1/Systems/System.Embedded.1
+      bmcUsername: username
+      bmcPassword: password
+      ipAddresses:
+        oam-ipv4: 100.82.39.148
+        pxe-ipv4: 192.168.121.48
+        eno4-ipv4: 192.168.110.148
+      macAddresses:
+        oam: 24:6E:96:53:05:9C
+        pxe: 24:6E:96:53:05:BC
+        eno4: 24:6E:96:53:05:BD
       hardwareProfile: example # defined in the hardwareprofile-example function
+

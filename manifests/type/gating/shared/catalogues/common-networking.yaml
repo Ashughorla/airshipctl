@@ -10,30 +10,42 @@ commonNetworking:
       name: oam
       type: phy
       mtu: "1500"
-      # ethernet_mac_address: <from host-catalogue> (optional)
+      #ethernet_mac_address: 24:6E:96:53:05:9C
     - id: pxe
       name: pxe
       type: phy
       mtu: "1500"
-      # ethernet_mac_address: <from host-catalogue> (optional)
+      #ethernet_mac_address: 24:6E:96:53:05:BC
+    - id: eno4
+      name: eno4
+      type: phy
+      mtu: "1500"
+      #ethernet_mac_address: 24:6E:96:53:05:BD
   networks:
     - id: oam-ipv4
       type: ipv4
       link: oam
-      # ip_address: <from host-catalogue>
-      netmask: 255.255.255.0
+      #ip_address: 100.82.39.148
+      netmask: 255.255.255.192
       routes:
         - network: 0.0.0.0
           netmask: 0.0.0.0
-          gateway: 10.23.25.1
+          gateway: 100.82.39.129
     - id: pxe-ipv4
       type: ipv4
       link: pxe
-      # ip_address: <from host-catalogue>
+      #ip_address: 192.168.121.48
+      netmask: 255.255.255.0
+    - id: eno4-ipv4
+      type: ipv4
+      link: eno4
+      #ip_address: 192.168.110.148
       netmask: 255.255.255.0
   services:
     - address: 8.8.8.8
       type: dns
     - address: 8.8.4.4
+      type: dns
+    - address: 100.82.32.10
       type: dns
 
